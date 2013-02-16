@@ -1,1 +1,6 @@
 alias ls="ls -G"
+alias ll="ls -Al"
+alias mkdir="mkdir -pv"
+alias ..="cd .."
+alias r="rails"
+alias b="bundle exec"
