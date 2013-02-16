@@ -7,6 +7,7 @@ alias b="bundle exec"
 alias bi="bundle exec install"
 alias sb="source ~/.bashrc"
 alias ca="cat ~/.bash/aliases"
+alias rsp="rails server puma"
 
 #git aliases
 alias g='git'
