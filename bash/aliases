@@ -4,6 +4,7 @@ alias mkdir="mkdir -pv"
 alias ..="cd .."
 alias r="rails"
 alias b="bundle exec"
+alias bi="bundle exec install"
 alias sb="source ~/.bashrc"
 
 #git aliases
