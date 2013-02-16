@@ -8,6 +8,7 @@ alias bi="bundle exec install"
 alias sb="source ~/.bashrc"
 alias ca="cat ~/.bash/aliases"
 alias rsp="rails server puma"
+alias mysql="mysql --auto-rehash -u root -p"
 
 #git aliases
 alias g='git'
