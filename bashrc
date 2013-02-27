@@ -13,3 +13,6 @@ fi
 export HISTCONTROL=erasedups
 export HISTSIZE=10000
 shopt -s histappend
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
