@@ -3,6 +3,7 @@ ln -s ~/dotfiles/bash_profile ~/.bash_profile
 ln -s ~/dotfiles/gitconfig ~/.gitconfig
 
 mkdir ~/.bash
+ln -s ~/dotfiles/bash/rbenv ~/.bash/rbenv
 ln -s ~/dotfiles/bash/aliases ~/.bash/aliases
 ln -s ~/dotfiles/bash-git-prompt/gitstatus.py ~/.bash/gitstatus.py
 ln -s ~/dotfiles/bash-git-prompt/gitprompt.sh ~/.bash/gitprompt.sh

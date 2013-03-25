@@ -1,6 +1,7 @@
 PATH=$PATH:/Library/Android/sdk/tools:/Library/Android/sdk/platform-tools
 
 source ~/.bash/aliases
+source ~/.bash/rbenv
 source ~/.bash/gitprompt.sh
 
 if [ -f ~/.bash/git-completion.bash ]; then
