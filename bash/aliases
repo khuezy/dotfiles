@@ -27,3 +27,4 @@ alias ghp='git push heroku master'
 
 #powder
 alias po='powder open'
+alias pr='powder restart'
