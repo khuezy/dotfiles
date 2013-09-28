@@ -16,4 +16,4 @@ export HISTSIZE=10000
 shopt -s histappend
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="/usr/local/heroku/bin:$(npm bin -g):$PATH"
