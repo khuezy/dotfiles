@@ -1,9 +1,10 @@
-PATH=$PATH:/Library/Android/sdk/tools:/Library/Android/sdk/platform-tools
-
 source ~/.bash/aliases
 source ~/.bash/rbenv
 source ~/.bash/chef
 source ~/.bash/aws
+source ~/.bash/android
+source ~/.bash/haskell
+source ~/.bash/heroku
 source ~/.bash/gitprompt.sh
 
 if [ -f ~/.bash/git-completion.bash ]; then
@@ -14,6 +15,4 @@ fi
 export HISTCONTROL=erasedups
 export HISTSIZE=10000
 shopt -s histappend
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$(npm bin -g):$PATH"
+export PATH
