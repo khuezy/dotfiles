@@ -1,6 +1,7 @@
 ln -s ~/dotfiles/bashrc  ~/.bashrc
 ln -s ~/dotfiles/bash_profile ~/.bash_profile
 ln -s ~/dotfiles/gitconfig ~/.gitconfig
+ln -s ~/dotfiles/ghci ~/.ghci
 
 mkdir ~/.bash
 ln -s ~/dotfiles/bash/rbenv ~/.bash/rbenv
