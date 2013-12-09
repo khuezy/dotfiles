@@ -1,6 +1,5 @@
 source ~/.bash/aliases
 source ~/.bash/rbenv
-source ~/.bash/chef
 source ~/.bash/aws
 source ~/.bash/android
 source ~/.bash/haskell
