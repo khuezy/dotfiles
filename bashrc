@@ -5,6 +5,7 @@ source ~/.bash/android
 source ~/.bash/haskell
 source ~/.bash/heroku
 source ~/.bash/gitprompt.sh
+source ~/.bash/node
 
 if [ -f ~/.bash/git-completion.bash ]; then
     . ~/.bash/git-completion.bash

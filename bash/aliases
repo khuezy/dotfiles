@@ -19,9 +19,11 @@ alias gcm='git checkout master'
 alias gs='git status'
 alias gf='git fetch -p'
 alias gp='git pull'
-alias gct='git add --all;git commit -am'
+alias gct='git add --all :/;git commit -am'
 alias gps='git push'
-
+alias grm='git rebase master'
+alias grc='git rebase --continue'
+alias gca='git commit --amend'
 #heroku
 alias ghp='git push heroku master'
 
