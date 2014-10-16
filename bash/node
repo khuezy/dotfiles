@@ -1,1 +1,0 @@
-PATH=$(npm bin --prefix packages):$PATH

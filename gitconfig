@@ -1,6 +1,6 @@
 [user]
-    name = Aeden Jameson
-    email = aeden.jameson@gmail.com
+    name = Khue Nguyen
+    email = khuezy.nguyen@gmail.com
 [color]
     ui = auto
 [alias]
@@ -20,6 +20,6 @@
 [merge]
     tool = vimdiff
 [core]
-	excludesfile = /Users/aedenjameson/.gitignore
+	excludesfile = /Users/khuezy/.gitignore
 [push]
 	default = simple
