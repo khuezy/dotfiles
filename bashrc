@@ -9,4 +9,8 @@ fi
 export HISTCONTROL=erasedups
 export HISTSIZE=10000
 shopt -s histappend
-export PATH
+
+
+export NVM_DIR="/Users/khuezy/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
