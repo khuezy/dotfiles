@@ -1,10 +1,3 @@
-set t_Co=256
-set number
-set ruler
-set encoding=utf-8
-set expandtab softtabstop=2 tabstop=2 shiftwidth=2
-
-
 "{{{Auto Commands
 
 " Automatically cd into the directory that the file is in
@@ -15,28 +8,28 @@ autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 
 " Restore cursor position to where it was before
 augroup JumpCursorOnEdit
-  au!
-  autocmd BufReadPost *
-        \ if expand("<afile>:p:h") !=? $TEMP |
-        \   if line("'\"") > 1 && line("'\"") <= line("$") |
-        \     let JumpCursorOnEdit_foo = line("'\"") |
-        \     let b:doopenfold = 1 |
-        \     if (foldlevel(JumpCursorOnEdit_foo) > foldlevel(JumpCursorOnEdit_foo - 1)) |
-        \        let JumpCursorOnEdit_foo = JumpCursorOnEdit_foo - 1 |
-        \        let b:doopenfold = 2 |
-        \     endif |
-        \     exe JumpCursorOnEdit_foo |
-        \   endif |
-        \ endif
-  " Need to postpone using "zv" until after reading the modelines.
-  autocmd BufWinEnter *
-        \ if exists("b:doopenfold") |
-        \   exe "normal zv" |
-        \   if(b:doopenfold > 1) |
-        \       exe  "+".1 |
-        \   endif |
-        \   unlet b:doopenfold |
-        \ endif
+   au!
+   autocmd BufReadPost *
+            \ if expand("<afile>:p:h") !=? $TEMP |
+            \   if line("'\"") > 1 && line("'\"") <= line("$") |
+            \     let JumpCursorOnEdit_foo = line("'\"") |
+            \     let b:doopenfold = 1 |
+            \     if (foldlevel(JumpCursorOnEdit_foo) > foldlevel(JumpCursorOnEdit_foo - 1)) |
+            \        let JumpCursorOnEdit_foo = JumpCursorOnEdit_foo - 1 |
+            \        let b:doopenfold = 2 |
+            \     endif |
+            \     exe JumpCursorOnEdit_foo |
+            \   endif |
+            \ endif
+   " Need to postpone using "zv" until after reading the modelines.
+   autocmd BufWinEnter *
+            \ if exists("b:doopenfold") |
+            \   exe "normal zv" |
+            \   if(b:doopenfold > 1) |
+            \       exe  "+".1 |
+            \   endif |
+            \   unlet b:doopenfold |
+            \ endif
 augroup END
 
 "}}}
@@ -66,8 +59,8 @@ set expandtab
 set smarttab
 
 " Who wants an 8 character tab?  Not me!
-set shiftwidth=2
-set softtabstop=2
+set shiftwidth=3
+set softtabstop=3
 
 " Use english for spellchecking, but don't spellcheck by default
 if version >= 700
@@ -127,6 +120,8 @@ if has("gui_running")
    set guioptions-=T
    "Terminus is AWESOME
    set guifont=Terminus\ 9
+else
+   colorscheme elflord
 endif
 
 "Status line gnarliness
@@ -293,6 +288,3 @@ let g:Tex_ViewRule_pdf = "kpdf"
 
 filetype plugin indent on
 syntax on
-
-set splitbelow
-set splitright
